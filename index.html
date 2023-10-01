@@ -1,0 +1,478 @@
+<html>
+ <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        
+        <title>Flipkart</title>
+        <link href="https://i.ibb.co/58BL7Pn/flip.jpg" rel="icon"/>
+        <link rel="stylesheet" href="flip.css"/>
+  </head>
+  <body>
+    <!-- Header Section-->
+     <header>
+      <nav class="navbar navbar-inverse headsec">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#devNav" >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="fk" href="#">FlipKart
+              <p class="ep">Explore 
+                <span class="plus"> &nbsp; Plus &plus;</span></p>
+            </a>
+        </div> 
+
+        <form class=" navbar-nav navbar-search " id="search" type="search" action="/action_page.php">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for a Products,Brand and More">
+            <div class="input-group-btn">
+              <button class="btn btn-default button" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        
+
+         <div id="devNav"  class="navbar-collapse collapse " >
+            <ul class="navbar-nav nav">
+                <li>
+                  <span class="mydiv">
+                    &nbsp; &nbsp;  &nbsp; <a href="#" class="glyphicon glyphicon-object-align-bottom"> Become-a-Seller</a>
+                    </span>
+                </li>
+
+                <li>
+                   <span class="mydiv dropdown">
+                    &nbsp; &nbsp; &nbsp; <a href="#" class="glyphicon glyphicon-user"> Sign-in</a>
+                    
+                     <span class="text dropdown-toggle"  data-toggle="dropdown">
+                     <span class="caret" style="color: blue;"></span></span>
+                     <ul class="dropdown-menu">
+                      <li>
+                        <a href="#" >New Customer? &nbsp; &nbsp; <span style="color: blue;">Sign Up
+                        </span>
+                        </a> 
+                      </li>
+                      <li class="divider"></li>
+                      <li><a href="#" class="glyphicon glyphicon-user mycls"> My Profile</a></li>
+                      <li><a href="#" class="glyphicon glyphicon-plus "> Flipkart Plus Zone</a></li>
+                      <li><a href="#" class="glyphicon glyphicon-lock"> Orders</a></li>
+                      <li><a href="#"class="glyphicon glyphicon-heart"> Wishlist</a></li>
+                      <li><a href="#" class="glyphicon glyphicon-level-up"> Rewards</a></li>
+                      <li><a href="#" class="glyphicon glyphicon-gift"> Gift Cards</a></li>
+                    </ul>
+                   </span>
+                </li>
+
+                <li>
+                  <span class="mydiv">
+                    &nbsp; &nbsp; &nbsp;  <a href="#" class="glyphicon glyphicon-shopping-cart"> Cart</a>
+                  </span>
+                </li>
+
+                <li>
+                  <span class="mydiv">
+                    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;<a href="#" class="glyphicon glyphicon-option-vertical"> </a>
+                  </span>
+                </li>
+
+               </ul>
+          </div>
+      </div>
+      </nav>
+   </header>
+
+
+  
+
+   <!-- Category -->
+
+        <div class="category panel panel-body">
+          
+          <div class="float-right container">
+            <span>&nbsp;  &nbsp;</span>
+            <div class="catpart">
+              <div>
+                <a href="#">
+                  <img src="https://i.ibb.co/pxnrVtc/grocery.jpg" alt="grocery">
+                </a></div>
+                <div class="dropdown">
+                  <span class="text dropdown-toggle"  data-toggle="dropdown">Grocery
+                    <span class="caret"></span></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Dairy</a> </li>
+                        <li><a href="#">Fruits</a></li>
+                        <li><a href="#">Vegetables</a></li>
+                        <li><a href="#">Bread and Baked</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Rice,Cereals</a></li>
+                        <li><a href="#">Spices</a></li>
+                        <li><a href="#">Drinks</a></li>
+                        <li><a href="#">Pet Cares</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="catpart">
+              <div>
+                <a href="#" >
+                  <img src="https://freepngimg.com/thumb/iphone_7/3-2-iphone-png-picture-transparent-thumb.png" 
+                  alt="Mobiles"/>
+                </a></div>
+                <div class="text">
+                  <a href="#" style="color:black">Mobiles</a>
+                </div>
+            </div>
+
+            <div class="catpart">
+              <div>
+                <a href="#">
+                  <img src="https://i.ibb.co/3pHwV2H/f1.jpg" alt="fashion">
+                </a></div>
+                <div class="dropdown">
+                <span class="text dropdown-toggle"  data-toggle="dropdown">Fashion
+                  <span class="caret"></span></span>
+                  <ul class="dropdown-menu">
+                      <li><a href="">Men's Top Wear</a> </li>
+                      <li><a href="#">Men's Bottom Wear</a></li>
+                      <li><a href="#">Women Ethnic</a></li>
+                      <li><a href="#">Women Western</a></li>
+                      <li><a href="#">Men Footwear</a></li>
+                      <li><a href="#">Women Footwear</a></li>
+                      <li><a href="#">Watches and accessories</a></li>
+                      <li><a href="#">Bags, Suitcases & Luggage</a></li>
+                      <li><a href="#">Kids</a></li>
+                      <li><a href="#">Essentials</a></li>
+                      <li><a href="#">Winter</a></li>
+                </ul>
+               
+               </div>
+            </div>
+
+            <div class="catpart">
+              <div>
+                <a href="#" >
+                  <img src="https://freepngimg.com/thumb/categories/673.png" alt="Electronics"/>
+                </a></div>
+                <div class="dropdown">
+                  <span class="text dropdown-toggle"  data-toggle="dropdown">Electronics
+                    <span class="caret"></span></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Audio</a> </li>
+                        <li><a href="#">Electronics GST Store</a></li>
+                        <li><a href="#">Cameras & Accessories</a></li>
+                        <li><a href="#">Computer Peripherals</a></li>
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Health & Personal care</a></li>
+                        <li><a href="#">Laptop Accessories</a></li>
+                        <li><a href="#">Mobiles</a></li>
+                        <li><a href="#">Power Bank</a></li>
+                    </ul>
+               </div>
+            </div>
+
+            <div class="catpart">
+              <div>
+                <a href="#">
+                  <img src="https://i.ibb.co/7nNr1dH/images-2.jpg" alt="Home and Furniture"/>
+                </a></div>
+                <div class="dropdown">
+                  <span class="text dropdown-toggle"  data-toggle="dropdown">Home And Furniture
+                    <span class="caret"></span></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Home Furnishings</a> </li>
+                        <li><a href="#">Furniture Studio</a></li>
+                        <li><a href="#">Living Room Furniture</a></li>
+                        <li><a href="#">Kitchen & Dining </a></li>
+                        <li><a href="#">Bedroom Furniture</a></li>
+                        <li><a href="#">Space Saving Furniture</a></li>
+                        <li><a href="#">Home Decor</a></li>
+                        <li><a href="#">Tools & Utility</a></li>
+                        <li><a href="#">Work Space Furniture</a></li>
+                        <li><a href="#">Kids Furniture</a></li>
+                    </ul>
+               </div>
+            </div>
+
+            <div class="catpart">
+              <div>
+                <a href="#" >
+                  <img src="https://st.depositphotos.com/1031166/3063/i/450/depositphotos_30635875-stock-photo-household-appliances.jpg" 
+                  alt="Appliances"/>
+                </a></div>
+                <div class="dropdown">
+                  <span class="text dropdown-toggle"  data-toggle="dropdown">Appliances
+                    <span class="caret"></span></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Mixer & Grinder</a> </li>
+                        <li><a href="#">Microwave</a></li>
+                        <li><a href="#">Refrigerator</a></li>
+                        <li><a href="#">Blender </a></li>
+                        <li><a href="#">Coffee maker</a></li>
+                        <li><a href="#">Dish Washer</a></li>
+                        <li><a href="#">Vaccum Cleaner</a></li>
+                        <li><a href="#">Air Conditioner</a></li>
+                        <li><a href="#">Fans</a></li>
+                        <li><a href="#">Washing Machine</a></li>
+                        <li><a href="#">Kettle</a></li>
+                        <li><a href="#">Stove</a></li>
+                        <li><a href="#">Iron</a></li>
+                        <li><a href="#">Rice Cooker</a></li>
+                        <li><a href="#">Bread Machine</a></li>
+                    </ul>
+
+             </div>
+            </div>
+
+            <div class="catpart">
+               <div>
+                <a href="#">
+                  <img src="https://i.ibb.co/pfKQz4h/71050627a56b4693.webp" alt="Travel" >
+                </a></div>
+                <div class="text">
+                  <a href="#" style="color:black">Travel</a>
+                </div>
+            </div>
+
+            <div class="catpart">
+              <div>
+                <a href="#">
+                  <img src="https://i.ibb.co/37xM6Ww/images-2.jpg" alt="Beauty,Toys and More"/>
+                </a></div>
+                <div class="dropdown">
+                  <span class="text dropdown-toggle"  data-toggle="dropdown">Beauty,Toys and More
+                    <span class="caret"></span></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Makeup Kit</a> </li>
+                        <li><a href="#">Nutrition and Health Care</a></li>
+                        <li><a href="#">Kids Toys</a></li>
+                        <li><a href="#">Indoor Game for kids</a></li>
+                        <li><a href="#">Offline Books</a></li>
+                        <li><a href="#">Teedy Bear</a></li>
+                        <li><a href="#">Helmets</a></li>
+                        <li><a href="#">Foods & drinks</a></li>
+                        <li><a href="#">Baby Care</a></li>
+                        <li><a href="#">Music</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="catpart">
+              <div>
+                <a href="#">
+                  <img src="https://i.ibb.co/2WVkL8b/images-3.jpg" alt="Two Wheelers"/>
+                  </a></div>
+                  <div class="dropdown">
+                    <span class="text dropdown-toggle"  data-toggle="dropdown">Two Wheelers
+                      <span class="caret"></span></span>
+                      <ul class="dropdown-menu">
+                          <li><a href="">Petrol Vehicles</a> </li>
+                          <li><a href="#">Electric Vehicles</a></li>
+                      </ul>
+               </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- Image slider -->
+        <div class="container jumbotron">
+        <div id="devcarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#devcarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#devcarousel" data-slide-to="1"></li>
+                <li data-target="#devcarousel" data-slide-to="2"></li>
+            </ol>
+         <div class="carousel-inner">
+            <div class="item active">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4529fd434a85c683.jpg?q=20" 
+                alt="table" class="imageslider"/>
+            </div>
+            
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/9713a8a3d85b97b0.jpg?q=20"
+                 alt="snacks" class="imageslider"/>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/e621535af20f3fec.jpg?q=20"
+                 alt="resturant" class="imageslider"/>
+            </div>
+         </div>
+
+         <a class="left carousel-control" href="#devcarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         <a class="right carousel-control" href="#devcarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+        </div>
+      </div>
+  
+      <!-- Best Of Electronics -->
+      
+      <div class="container">
+        <div class="panel panel-heading">
+          <h3>Best Of Electronics</h3>
+        </div>
+
+        <div class="main-carousel">
+        <div class="elect cell">
+          <img src="https://i.ibb.co/k1j09rM/images-5.jpg" alt="Router"/>
+          <p>UPS and Router UPS</p>
+          <p style="font-weight:bold">From ₹999</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/cLhx9ym/projector.jpg" alt="projector">
+          <p>Projector</p>
+          <p style="font-weight:bold">From ₹6990</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/F8pLCyN/monitor.jpg" alt="monitor">
+          <p>Monitors</p>
+          <p style="font-weight:bold">From ₹6599</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/GtzYKCP/SD.jpg" alt="SD">
+          <p>Top Selling SD Cards</p>
+          <p style="font-weight:bold">From ₹439</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/1QZvQyp/printer.jpg" alt="printer">
+          <p>Printer</p>
+          <p style="font-weight:bold">From ₹3999</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/qkCtXCX/trimmer.jpg" alt="trimmer">
+          <p>Best of Trimmers</p>
+          <p style="font-weight:bold">From ₹299</p>
+        </div>
+        
+        <div class="elect cell">
+          <img src="https://i.ibb.co/bRXRGx4/download-1.jpg" alt="keyboard">
+          <p>Keyboards and Mouse</p>
+          <p style="font-weight:bold">From ₹199</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/m4XvYHW/images-3.jpg" alt="PowerBank">
+          <p>Premium PowerBanks</p>
+          <p style="font-weight:bold">From ₹3999</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/5YNtn3D/download-1.jpg" alt="Camera">
+          <p>Top Mirrorless Cameras</p>
+          <p style="font-weight:bold">Shop Now!</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/Jnb1g2F/download-2.jpg" alt="USB">
+          <p>USB Gadgets</p>
+          <p style="font-weight:bold">From ₹199</p>
+        </div>
+        
+       </div>
+      </div>
+
+      <div class="container">
+        <div class="panel panel-heading">
+          <h3>Beauty, Toys and More</h3>
+        </div>
+
+        <div class="main-carousel">
+        <div class="elect cell">
+          <img src="https://i.ibb.co/BZXwxrC/download-3.jpg" alt="Motor Cycle">
+          <p>Motor Cycle</p>
+          <p style="font-weight:bold">Up to 70% off</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/02LfgPF/images-1.jpg" alt="Fiction Books">
+          <p>Fiction Books</p>
+          <p style="font-weight:bold">From ₹299</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/THkW2qm/download-1.jpg" alt="Helmet">
+          <p>Rider Helmets</p>
+          <p style="font-weight:bold">From ₹1999</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/g4vDF5j/download-2.jpg" alt="Tyres">
+          <p>Tyres</p>
+          <p style="font-weight:bold">From ₹799</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/3mpvS9t/car.jpg" alt="car">
+          <p>Cars & Remote Control Cars</p>
+          <p style="font-weight:bold">From ₹99</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/P44R8xw/teddybear.jpg" alt="teddybear">
+          <p>Teedy Bears</p>
+          <p style="font-weight:bold">From ₹159</p>
+        </div>
+        
+        <div class="elect cell">
+          <img src="https://i.ibb.co/1rMshYK/makeupkit.jpg" alt="makeupkit" >
+          <p>Makeup Kits</p>
+          <p style="font-weight:bold">From ₹1999</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/30prYbK/gamekit.jpg" alt="gamekit">
+          <p>Indoor Game Kits</p>
+          <p style="font-weight:bold">From ₹159</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/gRXQ9k2/toystatue.jpg" alt="toystatue" >
+          <p>Toy Statues</p>
+          <p style="font-weight:bold">Shop Now!</p>
+        </div>
+
+        <div class="elect cell">
+          <img src="https://i.ibb.co/prXypwZ/drawing-kit.jpg" alt="drawing-kit" >
+          <p>Drawing Kits,pens & Sketchs</p>
+          <p style="font-weight:bold">From ₹129</p>
+        </div>
+        
+       </div>
+      </div>
+     
+        
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script type="text/javascript" >
+              $('.main-carousel').flickity({
+              // options
+              cellAlign: 'left',
+              wrapAround:true,
+              freeScroll: true
+            });
+
+      </script>
+
+   <!-- Footer Section-->
+     <footer>
+
+     </footer>
+  </body>
+</html>
+
