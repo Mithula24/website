@@ -9,9 +9,33 @@
         
         <title>Flipkart</title>
         <link href="https://i.ibb.co/58BL7Pn/flip.jpg" rel="icon"/>
+         <script src="flip.js" ></script>
+
         <link rel="stylesheet" href="flip.css"/>
+       
+        <style>
+          body{
+              background-color:white;
+              color:black;
+          }
+  
+          .mydark{
+              background-color: black;
+              color:rgba(255, 255, 255, 0.849);
+          }
+           </style>
+            <script>
+              const changemode = () =>{
+                window.onload = document.body;
+                  let mybody = document.body;
+                  
+                  mybody.classList.toggle('mydark')
+                 
+              }
+             </script>
   </head>
-  <body>
+  <body class="mydark">
+    
     <!-- Header Section-->
      <header>
       <nav class="navbar navbar-inverse headsec">
@@ -27,6 +51,8 @@
                 <span class="plus"> &nbsp; Plus &plus;</span></p>
             </a>
         </div> 
+          
+     
 
         <form class=" navbar-nav navbar-search " id="search" type="search" action="/action_page.php">
           <div class="input-group">
@@ -35,6 +61,7 @@
               <button class="btn btn-default button" type="submit">
                 <i class="glyphicon glyphicon-search"></i>
               </button>
+              
             </div>
           </div>
         </form>
@@ -77,10 +104,16 @@
                   </span>
                 </li>
 
-                <li>
+                <!-- <li>
                   <span class="mydiv">
                     &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;<a href="#" class="glyphicon glyphicon-option-vertical"> </a>
                   </span>
+                </li> -->
+
+                <li>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button onClick="changemode()">
+                   <a href="#" alt="changemode" title="ChangeMode" class="glyphicon glyphicon-adjust modechange"></a>
+                  </button>
                 </li>
 
                </ul>
@@ -91,21 +124,21 @@
 
 
   <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-success btn-lg" data-toggle="modal" 
- data-target="#myModal">Flat 50% Deals</button>
+<!-- <button type="button" class="btn btn-success btn-lg" data-toggle="modal" 
+ data-target="#myModal">Flat 50% Deals</button> -->
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<!-- <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
-    <!-- Modal content-->
+    Modal content
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Flat 50% Off </h4>
       </div>
       <div class="modal-body">
-        <p> Big Billion Sales Start at Oct 1, guys Ready to add Wishlist</p>
+        <p> Big Billion Sales Start at Oct 1, </p>
         <img src="https://i.ibb.co/9tH35XT/sale.jpg" alt="sale">
       </div>
       <div class="modal-footer">
@@ -114,21 +147,28 @@
     </div>
 
   </div>
-</div>
+</div> -->
 
    <!-- Category -->
-
-        <div class="category panel panel-body">
+   <div id="coupon">
+    <button onClick="closecoupon()" style="text-align:end; background-color: rgb(234, 61, 61); color: black">&times;</button>
+    <p>Diwali Sales Start <span style="color: rgb(163, 47, 61);">Ready to add Wishlist</span></p>
+    <p> Big Billion Sales Start at Oct 1,Flat 50% Deals Start <br/>
+        <!-- <img src="https://i.ibb.co/9tH35XT/sale.jpg" alt="Sale"> -->
+      </p>
+  </div>
+        <div id="category" class="panel panel-body">
           
           <div class="float-right container">
             <span>&nbsp;  &nbsp;</span>
             <div class="catpart">
+              
               <div>
                 <a href="#">
                   <img src="https://i.ibb.co/pxnrVtc/grocery.jpg" alt="grocery">
                 </a></div>
                 <div class="dropdown">
-                  <span class="text dropdown-toggle"  data-toggle="dropdown">Grocery
+                  <span class="text dropdown-toggle"  data-toggle="dropdown" style="color:black">Grocery
                     <span class="caret"></span></span>
                     <ul class="dropdown-menu">
                         <li><a href="">Dairy</a> </li>
@@ -162,7 +202,7 @@
                   <img src="https://i.ibb.co/3pHwV2H/f1.jpg" alt="fashion">
                 </a></div>
                 <div class="dropdown">
-                <span class="text dropdown-toggle"  data-toggle="dropdown">Fashion
+                <span class="text dropdown-toggle"  data-toggle="dropdown" style="color:black">Fashion
                   <span class="caret"></span></span>
                   <ul class="dropdown-menu">
                       <li><a href="">Men's Top Wear</a> </li>
@@ -187,7 +227,7 @@
                   <img src="https://freepngimg.com/thumb/categories/673.png" alt="Electronics"/>
                 </a></div>
                 <div class="dropdown">
-                  <span class="text dropdown-toggle"  data-toggle="dropdown">Electronics
+                  <span class="text dropdown-toggle"  data-toggle="dropdown" style="color:black">Electronics
                     <span class="caret"></span></span>
                     <ul class="dropdown-menu">
                         <li><a href="">Audio</a> </li>
@@ -209,7 +249,7 @@
                   <img src="https://i.ibb.co/7nNr1dH/images-2.jpg" alt="Home and Furniture"/>
                 </a></div>
                 <div class="dropdown">
-                  <span class="text dropdown-toggle"  data-toggle="dropdown">Home And Furniture
+                  <span class="text dropdown-toggle"  data-toggle="dropdown" style="color:black">Home And Furniture
                     <span class="caret"></span></span>
                     <ul class="dropdown-menu">
                         <li><a href="">Home Furnishings</a> </li>
@@ -233,7 +273,7 @@
                   alt="Appliances"/>
                 </a></div>
                 <div class="dropdown">
-                  <span class="text dropdown-toggle"  data-toggle="dropdown">Appliances
+                  <span class="text dropdown-toggle"  data-toggle="dropdown" style="color:black">Appliances
                     <span class="caret"></span></span>
                     <ul class="dropdown-menu">
                         <li><a href="">Mixer & Grinder</a> </li>
@@ -272,7 +312,7 @@
                   <img src="https://i.ibb.co/37xM6Ww/images-2.jpg" alt="Beauty,Toys and More"/>
                 </a></div>
                 <div class="dropdown">
-                  <span class="text dropdown-toggle"  data-toggle="dropdown">Beauty,Toys and More
+                  <span class="text dropdown-toggle"  data-toggle="dropdown" style="color:black">Beauty,Toys and More
                     <span class="caret"></span></span>
                     <ul class="dropdown-menu">
                         <li><a href="">Makeup Kit</a> </li>
@@ -295,7 +335,7 @@
                   <img src="https://i.ibb.co/2WVkL8b/images-3.jpg" alt="Two Wheelers"/>
                   </a></div>
                   <div class="dropdown">
-                    <span class="text dropdown-toggle"  data-toggle="dropdown">Two Wheelers
+                    <span class="text dropdown-toggle"  data-toggle="dropdown" style="color:black">Two Wheelers
                       <span class="caret"></span></span>
                       <ul class="dropdown-menu">
                           <li><a href="">Petrol Vehicles</a> </li>
@@ -647,25 +687,34 @@
          </div>
         </div>
 
-
-
+          
+         </div>
+        </div>
 
 
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-      <script type="text/javascript" >
+      
+      <script type="text/javascript">
+        function myFunction(){
+      element.classList.remove("flickity-page-dots");}
               $('.main-carousel').flickity({
               // options
               cellAlign: 'left',
               wrapAround:true,
               freeScroll: true
             });
-
+            
       </script>
 
    <!-- Footer Section-->
      <footer>
 
      </footer>
+
+     <script>
+      window.onload = onloadPage();
+    
+     </script>
   </body>
 </html>
 
