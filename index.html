@@ -15,13 +15,13 @@
        
         <style>
           body{
-              background-color:white;
-              color:black;
+              background-color:black;
+              color:white;
           }
   
           .mydark{
-              background-color: black;
-              color:rgba(255, 255, 255, 0.849);
+              background-color: white;
+              color:black;
           }
            </style>
             <script>
@@ -35,7 +35,7 @@
              </script>
   </head>
   <body class="mydark">
-    
+     
     <!-- Header Section-->
      <header>
       <nav class="navbar navbar-inverse headsec">
@@ -116,6 +116,13 @@
                   </button>
                 </li>
 
+                <li class="geo">
+                  <button onclick="geolocation()">Get Location</button>
+        <p id="out"></p>
+        <p id="weather"></p>
+        
+                </li>
+
                </ul>
           </div>
       </div>
@@ -124,12 +131,15 @@
 
 
      <!-- Category -->
-   <div id="coupon">
-    <button onClick="closecoupon()" style="text-align:end; background-color: rgb(234, 61, 61); color: black">&times;</button>
-    <p>Diwali Sales Start <span style="color: rgb(163, 47, 61);">Ready to add Wishlist</span></p>
-    <p> Big Billion Sales Start at Oct 1,Flat 50% Deals Start <br/>
-        <!-- <img src="https://i.ibb.co/9tH35XT/sale.jpg" alt="Sale"> -->
-      </p>
+   <div id="coupon" >
+    <button onClick="closecoupon()" style=" background-color: rgb(234, 61, 61); color: black; text-align:right">&times;</button>
+    <div class="bg"></div>
+    <p> 
+       <span style="color: rgb(163, 47, 61)">Diwali Sales Start,Ready to add Wishlist
+       <br/> Big Billion Sales Start at Nov 8,Flat 70% Deals Start </span>
+        
+  </p>
+     
   </div>
         <div id="category" class="panel panel-body">
           
@@ -677,6 +687,38 @@
             });
             
       </script>
+      
+<script>
+  let x = document.getElementById('out');
+  let y = document.getElementById('weather');
+
+  function geolocation(){
+      if(navigator.geolocation){
+          navigator.geolocation.getCurrentPosition(showPosition)
+      }else{
+          x.innerText = "Geo Not Supported"
+      }
+  }
+
+  function showPosition(data){
+      console.log(data)
+      let lat = data.coords.latitude;
+      let lon = data.coords.longitude;
+      x.innerText = `Latitude is ${lat} and longitude is ${lon}`
+      const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+      //api calling
+      fetch(url,{method:'GET'})
+      //return promise
+      .then((res) =>  res.json())
+      //resolve the promise
+      .then((data) => {
+          console.log(data)
+          let cityName = data.city.name;
+          let temp = data.list[0].temp.day+" °C"
+          y.innerText=`Weather of ${cityName} is ${temp}`
+      })
+  }
+</script>
 
    <!-- Footer Section-->
      <footer>

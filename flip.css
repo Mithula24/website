@@ -61,7 +61,7 @@
     width:25% !important;
     /* display:block ; */
     margin-top:3%;
-    margin-right:2%;
+    margin-right:1%;
     align:center;
     } 
 
@@ -70,6 +70,11 @@
 
 }
 
+.geo button{
+    margin-left:10%;
+    color:rgb(8, 119, 237);
+    border: hidden;
+}
 
 /* .bgcls{
     height:140px;
@@ -186,23 +191,53 @@
 }
 
 #coupon{
-    height:350px;
-    width:550px;
-    background-image:url('https://i.ibb.co/qk38NRx/diwali.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
+    height:300px;
+    width:400px;
+    
     /* background-size: contains; */
-    background-color:rgb(122, 220, 233);
+    background-color:rgb(212, 232, 233);
     color: rgb(243, 6, 18);
     font-size:large;
-    text-align: end;
+    /* text-align: end; */
     position:absolute;
     /* margin-top:1%; */
     margin-left:34%;
     z-index:100;
 }
 
-#coupon p{
-    text-align: center;
+#coupon button{
+    text-align:right !important;
 }
+
+
  
+
+.bg{
+    background-image:url('https://i.ibb.co/VgLL089/cp.jpg');
+    background-repeat: no-repeat;
+    background-size:cover; 
+    width:50%;
+    height:30%;
+    position:absolute;
+    background-size:50%;
+    /* text-align: center !important; */
+    margin-left:35%;
+    /* background-size:50%; */
+}
+
+#coupon p{
+    /* text-align: center; */
+    margin-top:26%;
+    flex:wrap;
+    /* background-image: url('https://i.ibb.co/G5Bmcjn/bb.png');
+    background-repeat: no-repeat;
+    background-size:cover;  */
+    /* background-size:100%; */
+    background-position: center;
+    /* width:40%;*/
+    height:36%; 
+    margin-left:1%;
+    /* text-align:left; */
+}
+
+
