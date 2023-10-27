@@ -193,8 +193,6 @@
 #coupon{
     height:300px;
     width:400px;
-    
-    /* background-size: contains; */
     background-color:rgb(212, 232, 233);
     color: rgb(243, 6, 18);
     font-size:large;
