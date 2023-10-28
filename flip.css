@@ -30,15 +30,23 @@
 
 .mydiv{
     margin-top:5%;
-    font-size:18px !important;
+    font-size:20px !important;
 
 }
 
-.modechange{
+.mydiv button{
+    background-color: transparent;
+    border:none;
+
+    font-size:22px;
+}
+
+/* .modechange{
     font-size:22px;
     color:rgb(8, 119, 237);
-    border: hidden;
-}
+    border: hidden !important;
+    margin-right:5% !important;
+} */
 
 
 .ep{
@@ -58,7 +66,7 @@
 
  #search{
     height:12% !important;
-    width:25% !important;
+    width:23% !important;
     /* display:block ; */
     margin-top:3%;
     margin-right:1%;
@@ -70,11 +78,11 @@
 
 }
 
-.geo button{
+/* .geo button{
     margin-left:10%;
     color:rgb(8, 119, 237);
     border: hidden;
-}
+} */
 
 /* .bgcls{
     height:140px;
@@ -238,4 +246,11 @@
     /* text-align:left; */
 }
 
+/* #loc button{
+    font-size:25px;
+    color:rgb(8, 119, 237);
+    border: hidden !important;
+    margin-left:35% !important;
 
+     
+} */
